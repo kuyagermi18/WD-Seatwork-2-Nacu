@@ -1,70 +1,202 @@
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  html, body {
-    background: url(/assets/img/homebg.jpg) center/cover no-repeat;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  position: relative;
+  z-index: 0;
+}
 
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
+/* ✨ Background Image Overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/img/homebg.jpg') center/cover no-repeat;
+  opacity: 0.8;
+  z-index: -1;
+  pointer-events: none;
+}
 
-  h1 {
-    justify-content: center;
-    text-align: center;
-  }
+/* 🧱 Header */
+header {
+  background-color: #333;
+  color: #fff;
+  opacity: 0.7;
+}
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-  }
+h1 {
+  text-align: center;
+  justify-content: center;
+}
 
-  nav ul li {
-    margin: 0 15px;
-  }
+/* 🧭 Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
 
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
+nav ul li {
+  margin: 0 15px;
+}
 
-  main {
-    flex: 1;
-  }
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 
-  .hero {
-    padding: 100px 20px;
-    text-align: center;
-    color: white;
-    background-color: #222;
-  }
+/* 📦 Main Layout */
+main {
+  flex: 1;
+}
 
-  .hero h2 {
-    font-size: 2.5rem;
-  }
+/* ⚔️ Hero Banner */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  opacity: 0.7;
+}
 
-  .hero p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
+.hero h2 {
+  font-size: 1.75rem;
+}
 
-  footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
-  }
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* 🧙‍♂️ Hero Cards Section */
+.heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.hero-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 220px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: scale(1.10);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 15px 0;
+}
+
+/* 🙈 Hover Info Reveal */
+.hero-card .hero-info {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin: 0 10px;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.hero-card:hover .hero-info {
+  opacity: 1;
+  max-height: 100px;
+}
+
+/* 📜 History Section */
+.history {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #222;
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1900px;
+  margin: 0 auto 60px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.history h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #4a4a4a;
+}
+
+.history p {
+  font-size: 2rem;
+  line-height: 1.7;
+}
+
+/* 📛 Footer */
+footer {
+  background-color: #1e1e1e;
+  color: #ffd700;
+  text-align: center;
+  padding: 15px;
+  opacity: 0.7;
+  font-size: 20px;
+}
+
+/* 🧱 Gods Section Header */
+.gods-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+/* 🎴 Misc */
+.jjk {
+  width: 150px;
+  height: auto;
+}
+
+.hero1 {
+  font-size: 20px;
+}
+
+.greek-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #eee;
+  max-width: 700px;
+  margin: 10px auto 30px;
+  line-height: 1.6;
+  font-style: italic;
+}
+

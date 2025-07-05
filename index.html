@@ -14,31 +14,91 @@
   <title>My Sample Website</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
+<style>
+
+.greek {
+font-size: 70px;
+}
+
+</style>
 <body>
   <header>
-        <div class="logo">
-        <img src="./assets/img/logo.png" alt="jjk" class="jjk">
-    </div>
-    <h1>Greek Gods</h1>
-    <nav>
-      <ul>
-        <li><a href="./pages/page1/index.html">Hero 1</a></li>
-        <li><a href="./pages/page2/index.html">Hero 2</a></li>
-        <li><a href="./pages/page3/index.html">Hero 3</a></li>
-        <li><a href="./pages/page4/index.html">Hero 4</a></li>
-        <li><a href="./pages/page5/index.html">Hero 5</a></li>
-      </ul>
-    </nav>
+  
+  <h1 class="greek">Greek Gods</h1>
+  <p class="greek-intro">
+  Discover the mighty deities of Mount Olympus, each with their own unique powers, stories, and legends that shaped ancient Greek mythology.
+</p>
+
+
   </header>
 
   <main>
     <section class="hero">
-      <h2>Welcome to the Home Page</h2>
-      <p>This is a sample website with 5 hero pages.</p>
+
+    <section class="heroes">
+
+    <div class="hero-card">
+      <a href="./pages/page1/index.html" style="text-decoration: none; color: inherit;">
+      <img src="./assets/img/zeus.jpg" alt="Zeus">
+      <h2>Zeus</h2></a>
+       <p class="hero-info">God of the sky and thunder, ruler of Mount Olympus.</p>
+  </div>
+
+  
+
+<div class="hero-card">
+  <a href="./pages/page2/index.html" style="text-decoration: none; color: inherit;">
+    <img src="./assets/img/hades.png" alt="Hades">
+    <h2>Hades</h2>
+  </a>
+  <p class="hero-info">God of the underworld and the dead.</p>
+</div>
+
+    <div class="hero-card">
+      <a href="./pages/page2/index.html" style="text-decoration: none; color: inherit;">
+      <img src="./assets/img/poseidon.jpg" alt="Poseidon">
+      <h2>Poseidon</h2>
+      </a>
+      <p class="hero-info">God of the sea, earthquakes, and horses.</p>
+    </div>
+
+    <div class="hero-card">
+      <a href="./pages/page2/index.html" style="text-decoration: none; color: inherit;">
+      <img src="./assets/img/athena.jpg" alt="Athena">
+      <h2>Athena</h2>
+      </a>
+      <p class="hero-info">Goddess of wisdom, strategy, and warfare.</p>
+    </div>
+
+    <div class="hero-card">
+      <a href="./pages/page2/index.html" style="text-decoration: none; color: inherit;">
+      <img src="./assets/img/apollo.jpg" alt="Apollo">
+      <h2>Apollo</h2>
+      </a>
+      <p class="hero-info">God of the sun, music, and prophecy.</p>
+    </div>
+
     </section>
+
+    <section class="history">
+  <h2>History of Greek Gods</h2>
+  <p>
+    The Greek gods are part of one of the most influential mythological systems in history. 
+    Originating from ancient Greece, they represented natural elements, human traits, and abstract forces. 
+    Led by Zeus on Mount Olympus, these deities played roles in countless myths explaining the origins of the world, the nature of humanity, and the laws of the universe.
+    Stories of their triumphs, flaws, and interactions with mortals continue to inspire literature, art, and culture to this day.
+  </p>
+</section>
+
   </main>
 
   <footer>
+    
+    <div class="logo">
+        <img src="./assets/img/logo.png" alt="jjk" class="jjk">
+    </div>
+
     <p>&copy; 2025 My Sample Website</p>
   </footer>
 </body>
