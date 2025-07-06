@@ -1,4 +1,4 @@
-/* Base Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,6 @@ html, body {
   opacity: 0.9;
 }
 
-/* 🎥 Video Background */
 #bg-video {
   position: fixed;
   top: 0;
@@ -30,7 +29,6 @@ html, body {
   opacity: 1;
 }
 
-/* 👑 Header */
 header {
   background-color: rgba(0, 0, 0, 0.7);
   color: #ff6666;
@@ -53,7 +51,6 @@ header {
   border: 2px solid #ff6666;
 }
 
-/* 🔗 Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -73,7 +70,6 @@ nav ul li a:hover {
   color: #fff;
 }
 
-/* 📜 Main */
 main {
   flex: 1;
 }
@@ -96,17 +92,15 @@ main {
   line-height: 1.7;
 }
 
-/* 🦶 Footer */
 footer {
   background-color: rgba(30, 30, 30, 0.8);
-  color: #ff6666;
+  color: #b34141;
   text-align: center;
   padding: 15px;
   font-size: 16px;
   position: relative;
 }
 
-/* 🖼 Logo */
 .logo-bottom {
   position: fixed;
   bottom: 15px;
@@ -117,7 +111,6 @@ footer {
   z-index: 10;
 }
 
-/* 🖼 GIF Background */
 .gif-bg {
   position: fixed;
   top: 0;
@@ -130,7 +123,6 @@ footer {
   pointer-events: none;
 }
 
-/* 🎥 MP4 Background */
 #bg-video {
   position: fixed;
   top: 0;

@@ -1,4 +1,4 @@
-/* 🔁 Reset & Base */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,6 @@ html, body {
   opacity: 0.9;
 }
 
-/* 🎥 MP4 Background */
 #bg-video {
   position: fixed;
   top: 0;
@@ -30,9 +29,8 @@ html, body {
   opacity: 1;
 }
 
-/* 🌊 Header */
 header {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(53, 105, 169, 0.7);
   color: #00ccff;
   padding: 20px;
   text-align: center;
@@ -53,7 +51,6 @@ header {
   border: 2px solid #00ccff;
 }
 
-/* 🔗 Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -73,7 +70,6 @@ nav ul li a:hover {
   color: #fff;
 }
 
-/* 📜 Main Content */
 main {
   flex: 1;
 }
@@ -97,7 +93,6 @@ main {
   line-height: 1.7;
 }
 
-/* 🦶 Footer */
 footer {
   background-color: rgba(30, 30, 30, 0.8);
   color: #00ccff;
@@ -107,7 +102,6 @@ footer {
   position: relative;
 }
 
-/* 🖼 Logo */
 .logo-bottom {
   position: fixed;
   bottom: 15px;

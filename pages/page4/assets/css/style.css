@@ -1,4 +1,4 @@
-/* 🔁 Reset & Base */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,6 @@ html, body {
   z-index: 0;
 }
 
-/* 🎥 MP4 Video Background */
 #bg-video {
   position: fixed;
   top: 0;
@@ -29,10 +28,9 @@ html, body {
   opacity: 0.85;
 }
 
-/* 🏛️ Header */
 header {
   background-color: rgba(0, 0, 0, 0.7);
-  color: #d2b48c; /* Wisdom color */
+  color: #bf9a69; 
   padding: 20px;
   text-align: center;
 }
@@ -52,7 +50,6 @@ header {
   border: 2px solid #d2b48c;
 }
 
-/* 🔗 Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -72,7 +69,6 @@ nav ul li a:hover {
   color: #fff;
 }
 
-/* 📜 Main Content */
 main {
   flex: 1;
 }
@@ -96,7 +92,6 @@ main {
   line-height: 1.7;
 }
 
-/* 🦶 Footer */
 footer {
   background-color: rgba(30, 30, 30, 0.8);
   color: #d2b48c;
@@ -106,7 +101,6 @@ footer {
   position: relative;
 }
 
-/* 🔖 Logo */
 .logo-bottom {
   position: fixed;
   bottom: 15px;
