@@ -131,7 +131,6 @@ nav ul li a:hover {
   line-height: 1.6;
 }
 
-/* 🦶 Footer */
 footer {
   background-color: rgba(30, 30, 30, 0.8);
   color: #ffd700;
@@ -149,4 +148,10 @@ footer img.logo-bottom {
   right: 15px;
   opacity: 0.8;
   z-index: 10;
+}
+
+.logo {
+  width: 100x; 
+  height: auto;
+  margin-top: 10px;
 }
