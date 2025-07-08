@@ -8,14 +8,16 @@
 </head>
 <body>
 
-  <video autoplay muted loop id="bg-video" preload="auto" poster="/assets/img/homebg.jpg">
+  <!-- 🎥 Background -->
+  <video autoplay muted loop id="bg-video" preload="auto">
     <source src="./assets/img/hadesbg.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
-  <header>
+  <!-- 🔱 Header Right-Aligned -->
+  <header class="header-right">
     <div class="header-content">
-      <img src="/assets/img/hades.png" alt="Hades" class="god-header-img" />
+      <img src="../../assets/img/hades.png" alt="Hades" class="god-header-img" />
       <h1>🔥 Hades</h1>
     </div>
     <nav>
@@ -30,18 +32,24 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero1">
-      <h2>God of the Underworld</h2>
-      <p>Hades ruled the realm of the dead. He was not evil, but stern and just — governing the souls with fairness and order in the shadowy underworld.</p>
+  <!-- 🔥 Vertical Box Layout -->
+  <main class="hades-container">
+    <section class="hades-box top">
+      <h1>Hades – King of the Underworld</h1>
+    </section>
+    <section class="hades-box bottom">
+      <p>
+        Hades ruled the realm of the dead. He was not evil, but stern and just — governing the souls with fairness and order in the shadowy underworld. As one of the Big Three, he was feared and respected by gods and mortals alike.
+      </p>
     </section>
   </main>
 
+  <!-- 🦶 Footer -->
   <footer>
     <div class="footer-content">
       <p>&copy; 2025 James' Mythology Page | All rights reserved</p>
     </div>
-    <img src="/assets/img/logo.png" alt="My Logo" class="logo-bottom" />
+    <img src="../../assets/img/logo.png" alt="My Logo" class="logo-bottom" />
   </footer>
 
 </body>

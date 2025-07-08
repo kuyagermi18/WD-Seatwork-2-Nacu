@@ -1,4 +1,4 @@
-/* Reset and base styling */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +10,11 @@ body, html {
   font-family: 'Segoe UI', sans-serif;
   position: relative;
   overflow-x: hidden;
+  background-color: #000;
+  opacity: 0.95;
 }
 
+/* 🔥 Video Background */
 #bg-video {
   position: fixed;
   top: 0;
@@ -22,96 +25,96 @@ body, html {
   z-index: -1;
 }
 
-/* Header styles */
-header {
-  background-color: rgba(0, 0, 0, 0.7);
+/* 🔱 Header */
+.header-right {
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 20px;
-  text-align: center;
+  text-align: right;
 }
 
-header h1 {
+.header-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.god-header-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffd700;
+}
+
+.header-content h1 {
   color: #ffd700;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #ffd700;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: white;
+  color: #fff;
 }
 
-/* Zeus Boxes Container */
-.zeus-container {
+/* 🔥 Hades Boxes */
+.hades-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   gap: 40px;
-  padding: 60px;
-  position: relative;
+  padding: 80px 20px;
+  max-width: 1150px;
+  margin: 0 auto;
   z-index: 1;
+  position: relative;
 }
 
-/* Left Box Styling */
-.zeus-boxleft {
-  flex: 1;
-  background-color: rgba(91, 25, 25, 0.85);
+.hades-box {
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-  animation: slideInLeft 1s ease-out forwards;
-  transform: translateX(-50px);
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1.5s ease-out;
 }
 
-.zeus-boxleft h1 {
+.hades-box.top h1 {
   font-size: 4rem;
   font-weight: 900;
-  color: #333;
+  color: #ff4444;
+  text-align: center;
 }
 
-/* Right Box Styling */
-.zeus-boxright {
-  flex: 1;
-  background-color: rgba(220, 117, 117, 0.95);
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-  animation: slideInRight 1s ease-out forwards;
-  transform: translateX(50px);
-  opacity: 1;
-}
-
-.zeus-boxright p {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  color: #444;
+.hades-box.bottom p {
+  font-size: 1.4rem;
+  color: #f0f0f0;
   text-align: justify;
+  line-height: 1.7;
 }
 
-/* Footer styling */
+/* 🔽 Footer */
 footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: #ffd700;
   text-align: center;
   padding: 20px;
-  position: relative;
   z-index: 2;
+  position: relative;
 }
 
-/* Logo */
 .logo-bottom {
   width: 80px;
   margin-top: 10px;
@@ -119,40 +122,33 @@ footer {
 }
 
 /* Animations */
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-50px);
+@keyframes fadeIn {
+  from {
     opacity: 0;
+    transform: translateY(30px);
   }
-  100% {
-    transform: translateX(0);
+  to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes slideInRight {
-  0% {
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
-  .zeus-container {
-    flex-direction: column;
-    padding: 30px;
-  }
-
-  .zeus-boxleft h1 {
+  .hades-box.top h1 {
     font-size: 2.5rem;
   }
 
-  .zeus-boxright p {
+  .hades-box.bottom p {
     font-size: 1.1rem;
+  }
+
+  .header-content {
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
