@@ -10,14 +10,11 @@ html, body {
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #000;
-  color: #fff;
   overflow-x: hidden;
   position: relative;
-  opacity: 0.90;
 }
 
-/* Video Background */
+/* 🎥 Background Video */
 #bg-video {
   position: fixed;
   top: 0;
@@ -29,7 +26,7 @@ html, body {
   opacity: 1;
 }
 
-/* Header */
+/* 🔱 Header */
 header {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
@@ -69,54 +66,54 @@ nav ul li a {
   color: #ffd700;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 nav ul li a:hover {
   color: white;
 }
 
-/* Main Container for Boxes */
+/* ⚡ Main Hero Section */
 main {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 40px;
+  padding: 60px 0;
   z-index: 1;
 }
 
 .zeus-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 40px;
+  align-items: flex-start;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  padding: 0 40px;
 }
 
-/* Zeus Left Box */
+/* Left Box: Title */
 .zeus-boxleft {
-  flex: 1;
-  background-color: rgba(182, 176, 176, 0.85);
+  width: 40%;
+  margin-left: 0;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
   animation: slideInLeft 1s ease-out forwards;
   transform: translateX(-50px);
-  opacity: 1;
+  opacity: 0;
 }
 
 .zeus-boxleft h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 900;
   color: #333;
 }
 
-/* Zeus Right Box */
+/* Right Box: Description */
 .zeus-boxright {
-  flex: 1;
+  width: 55%;
+  margin-right: 0;
   background-color: rgba(240, 240, 240, 0.95);
   padding: 40px;
   border-radius: 12px;
@@ -127,13 +124,13 @@ main {
 }
 
 .zeus-boxright p {
-  font-size: 1.3rem;
+  font-size: 0.7rem;
   line-height: 1.8;
   color: #444;
   text-align: justify;
 }
 
-/* Footer */
+/* 🦶 Footer */
 footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: #ffd700;
@@ -142,15 +139,16 @@ footer {
   font-size: 16px;
   z-index: 2;
   position: relative;
+  opacity: 1;
 }
 
 .logo-bottom {
   width: 80px;
   margin-top: 10px;
-  opacity: 0.8;
+  opacity: 1;
 }
 
-/* Animations */
+/* ✨ Animations */
 @keyframes slideInLeft {
   0% {
     transform: translateX(-50px);
@@ -173,15 +171,23 @@ footer {
   }
 }
 
-/* Responsive Design */
+/* 📱 Responsive */
 @media (max-width: 768px) {
   .zeus-container {
     flex-direction: column;
-    padding: 30px;
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .zeus-boxleft,
+  .zeus-boxright {
+    width: 100%;
+    margin: 0;
   }
 
   .zeus-boxleft h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    text-align: center;
   }
 
   .zeus-boxright p {
