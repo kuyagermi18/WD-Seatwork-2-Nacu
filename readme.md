@@ -75,7 +75,7 @@ This project is a multi-page website showcasing five major Olympian gods in Gree
 
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+
 
 ---
 
@@ -91,11 +91,13 @@ This project is a multi-page website showcasing five major Olympian gods in Gree
 7. Follow this folder structure:
 
 WD-ProjectName
+│
 ├── assets
 │ ├── css
+│ │
 │ │ └── style.css
 │ ├── img
-│ │ └── file.jpg/png/webp
+│ │ └── pics
 │ └── js
 │ └── script.js
 ├── pages
