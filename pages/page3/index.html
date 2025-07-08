@@ -8,40 +8,46 @@
 </head>
 <body>
 
-  <video autoplay muted loop id="bg-video" preload="auto" poster="../../assets/img/homebg.jpg">
-    <source src="./img/poseidonbg.mp4" type="video/mp4">
+  <!-- 🌊 Video Background -->
+  <video autoplay muted loop id="bg-video" preload="auto" poster="/assets/img/homebg.jpg">
+    <source src="../page3/img/poseidonbg.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
-  <header>
-    <div class="header-content">
+  <!-- 🧭 Vertical Header on the left -->
+  <aside class="left-header">
+    <div class="header-content-vertical">
       <img src="../../assets/img/poseidon.jpg" alt="Poseidon" class="god-header-img" />
       <h1>🌊 Poseidon</h1>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">🏛️ Home</a></li>
+          <li><a href="../page1/index.html">Zeus</a></li>
+          <li><a href="../page2/index.html">Hades</a></li>
+          <li><a href="../page3/index.html">Poseidon</a></li>
+          <li><a href="../page4/index.html">Athena</a></li>
+          <li><a href="../page5/index.html">Apollo</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="../../index.html">🏛️ Home</a></li>
-        <li><a href="../page1/index.html"> Zeus </a></li>
-        <li><a href="../page2/index.html"> Hades </a></li>
-        <li><a href="../page3/index.html"> Poseidon </a></li>
-        <li><a href="../page4/index.html"> Athena </a></li>
-        <li><a href="../page5/index.html"> Apollo </a></li>
-      </ul>
-    </nav>
-  </header>
+  </aside>
 
-  <main>
-    <section class="hero1">
-      <h2>God of the Sea</h2>
-      <p>Proud and powerful, Poseidon ruled over oceans, storms, and earthquakes. With his mighty trident, he could calm or shake the world’s waters.</p>
-    </section>
+  <!-- 📦 Two Boxes Section -->
+  <main class="poseidon-container">
+    <div class="poseidon-boxleft">
+      <p>
+        Poseidon, god of the sea, storms, and earthquakes, wields the powerful trident and commands all waters. Known for his temper and strength, he plays a crucial role in many myths and battles.
+      </p>
+    </div>
+    <div class="poseidon-boxright">
+      <h1>Poseidon – King of the Seas</h1>
+    </div>
   </main>
 
+  <!-- 🦶 Footer -->
   <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 James' Mythology Page | All rights reserved</p>
-    </div>
-    <img src="/assets/img/logo.png" alt="My Logo" class="logo-bottom" />
+    <p>&copy; 2025 James' Mythology Page | All rights reserved</p>
+    <img src="../../assets/img/logo.png" alt="My Logo" class="logo-bottom" />
   </footer>
 
 </body>
