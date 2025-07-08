@@ -13,7 +13,7 @@
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Showcasing Gods of Olympus. (Optional)
+  Showcasing Gods of Olympus.
 </div>
 
 <br />
