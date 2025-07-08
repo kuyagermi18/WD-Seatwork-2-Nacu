@@ -3,45 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Apollo - Greek Gods</title>
+  <title>Apollo - God of the Sun</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
 
-  <video autoplay muted loop id="bg-video" preload="auto" poster="/assets/img/homebg.jpg">
+  <!-- 🔆 Video Background -->
+  <video autoplay muted loop id="bg-video">
     <source src="./assets/img/apollobg.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
-  <header>
+  <!-- ☀️ Header -->
+  <header class="apollo-header">
     <div class="header-content">
       <img src="../../assets/img/apollo.jpg" alt="Apollo" class="god-header-img" />
-      <h1>☀️ Apollo</h1>
+      <div class="header-text">
+        <h1>🌞 Apollo</h1>
+        <p class="subtitle">God of the Sun</p>
+      </div>
     </div>
     <nav>
       <ul>
         <li><a href="../../index.html">🏛️ Home</a></li>
-        <li><a href="../page1/index.html"> Zeus </a></li>
-        <li><a href="../page2/index.html"> Hades </a></li>
-        <li><a href="../page3/index.html"> Poseidon </a></li>
-        <li><a href="../page4/index.html"> Athena </a></li>
-        <li><a href="../page5/index.html"> Apollo </a></li>
+        <li><a href="../page1/index.html">Zeus</a></li>
+        <li><a href="../page2/index.html">Hades</a></li>
+        <li><a href="../page3/index.html">Poseidon</a></li>
+        <li><a href="../page4/index.html">Athena</a></li>
+        <li><a href="../page5/index.html">Apollo</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="hero1">
-      <h2>God of the Sun, Music, and Prophecy</h2>
-      <p>Apollo, radiant and divine, ruled over the arts, healing, and the sun. Known for his beauty, wisdom, and talent with the lyre, he brought harmony to the cosmos and truth to mankind.</p>
-    </section>
+  <!-- 🌞 Main Content -->
+  <main class="apollo-container">
+    <div class="apollo-boxleft">
+      <p>
+        Apollo is the Greek god of the sun, music, poetry, and prophecy. He represents light, truth, healing, and harmony. With his golden chariot, he brought daylight across the sky.
+      </p>
+    </div>
+    <div class="apollo-boxright">
+      <h1>Apollo – God of the Sun</h1>
+    </div>
   </main>
 
+  <!-- 🔻 Footer -->
   <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 James' Mythology Page | All rights reserved</p>
-    </div>
-    <img src="/assets/img/logo.png"My Logo" class="logo-bottom" />
+    <p>&copy; 2025 James' Mythology Page | All rights reserved</p>
+    <img src="../../assets/img/logo.png" alt="My Logo" class="logo-bottom" />
   </footer>
 
 </body>
