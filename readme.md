@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/kuyagermi18/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/logo.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/logo.png" alt="Lightning" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Greek Gods</h3>
@@ -90,6 +90,7 @@ This project is a multi-page website showcasing five major Olympian gods in Gree
 6. Rename page folders appropriately based on their content or purpose.
 7. Follow this folder structure:
 
+```plaintext
 WD-ProjectName
 │
 ├── assets
